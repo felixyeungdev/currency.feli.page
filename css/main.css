@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  height: 100vh;
+}
+
+a {
+  color: #f9a825;
+  text-decoration: none;
+}
+
+main,
+footer {
+  text-align: center;
+}
+
+header {
+  height: 64px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #000;
+  color: #fff;
+}
+
+select {
+  border: #f9a825 1px solid;
+  background: #ffffff;
+  border-radius: 100px;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: #f9a825 1px solid;
+  background: #ffffff;
+  border-radius: 100px;
+  padding: 10px 20px;
+  outline: none;
+}
+
+button {
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px;
+  background-color: #f9a825;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background 250ms ease-in-out;
+  transition: background 250ms ease-in-out;
+}
+
+button:hover {
+  background: #fabc57;
+}
+
+button:active {
+  background: #e59006;
+}
+
+main {
+  min-height: calc(100vh - 64px * 2.5);
+}
+
+main #input {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: rgba(249, 168, 37, 0.1);
+}
+
+main #input .currency-selection {
+  margin: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main #input .currency-selection label {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #input .currency-selection select {
+  margin-left: 8px;
+}
+
+main #input .amount-input {
+  margin: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main #input .amount-input label {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #input .amount-input input {
+  margin-left: 8px;
+  height: 32px;
+}
+
+main #input .actions {
+  margin: 16px;
+}
+
+main #output {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+main #output .converted-list .currency {
+  margin: 24px auto;
+}
+
+footer {
+  background: #000000;
+  color: white;
+  height: 64px;
+  margin-top: 32px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+/*# sourceMappingURL=main.css.map */

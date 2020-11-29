@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+
+* {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    height: 100vh;
+}
+
+a {
+    color: #f9a825;
+    text-decoration: none;
+}
+
+main,
+footer {
+    text-align: center;
+}
+
+header {
+    height: 64px;
+    display: grid;
+    place-items: center;
+    background: #000;
+    color: #fff;
+}
+
+select {
+    border: #f9a825 1px solid;
+    background: #ffffff;
+    border-radius: 100px;
+    padding: 10px 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+input {
+    border: #f9a825 1px solid;
+    background: #ffffff;
+    border-radius: 100px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+button {
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: #f9a825;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    transition: background 250ms ease-in-out;
+}
+
+button:hover {
+    background: lighten(#f9a825, 10%);
+}
+button:active {
+    background: darken(#f9a825, 10%);
+}
+
+main {
+    min-height: calc(100vh - 64px * 2.5);
+    #input {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        background: rgba(#f9a825, 0.1);
+
+        .currency-selection {
+            margin: 16px;
+            display: flex;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            label {
+                display: grid;
+                align-items: center;
+            }
+            select {
+                margin-left: 8px;
+            }
+        }
+        .amount-input {
+            margin: 16px;
+            display: flex;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            label {
+                display: grid;
+                align-items: center;
+            }
+            input {
+                margin-left: 8px;
+                height: 32px;
+            }
+        }
+        .actions {
+            margin: 16px;
+        }
+    }
+
+    #output {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        .base-info {
+        }
+        .converted-list {
+            .currency {
+                margin: 24px auto;
+            }
+        }
+    }
+}
+
+footer {
+    background: #000000;
+    color: white;
+    height: 64px;
+    margin-top: 32px;
+    display: grid;
+    place-items: center;
+}
